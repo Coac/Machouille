@@ -36,7 +36,9 @@
 				<?php 		}
 			
 				echo   '</tbody>
-					    </table>';
+					    </table>
+
+              <a class="btn btn-default" href="destroybasket.php" role="button">Delete all the items</a>';
 
     	     }
 
