@@ -60,7 +60,7 @@
 						echo $_SESSION['user']['login'];
 					}
 					else
-						echo "<a href='login.php'> Login" </a>;
+						echo "<a href='login.php'> Login </a>";
 
 				?>
 				</li> 
