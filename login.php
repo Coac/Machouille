@@ -13,11 +13,11 @@
 				<div class="login-title">
 	           		<h4 class="title">Registered Customers</h4>
 					<div id="loginbox" class="loginbox">
-						<form action="" method="post" name="login" id="login-form">
+						<form action="loginscript.php" method="post" name="login" id="login-form">
 						  <fieldset class="input">
 						    <p id="login-form-username">
-						      <label for="modlgn_username">Email</label>
-						      <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+						      <label for="modlgn_username">Login</label>
+						      <input id="modlgn_username" type="text" name="Login" class="inputbox" size="18" autocomplete="off">
 						    </p>
 						    <p id="login-form-password">
 						      <label for="modlgn_passwd">Password</label>
