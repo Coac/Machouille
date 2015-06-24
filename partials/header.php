@@ -196,15 +196,17 @@
 			</ul>
 		</li>
 	</ul>
-    <ul class="last"><li><a href="#"><?php
+    <ul class="last"><li><a href="checkout.php">Cart(<?php
 
 				if(isset($_SESSION["order"])){
 					echo count($_SESSION["order"]);
 				}
+				else
+					echo '0';
 				
 					
 				
-				?></a></li></ul>
+				?>)</a></li></ul>
   </div>
 </div>
  <div class="clear"></div>
