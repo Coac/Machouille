@@ -40,8 +40,8 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 		         	 <div class="btn_form">
 						<form action="addProductCart.php" method="post">
 							<input type="submit" value="buy" title="">
-							<input type="hidden" name="id" value=<?php  ?>>
-							<input type="hidden" name="name" value=<?php  ?>>
+							<input type="hidden" name="id" value=<?php echo $product[0]['id'] ?>>
+							<input type="hidden" name="name" value=<?php echo $product[0]['name']  ?>>
 							<select name="quantity">
 								<option value="1">1</option>
 								<option value="2">2</option>
