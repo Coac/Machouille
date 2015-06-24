@@ -7,7 +7,7 @@
 			{
 				try 
 				{
-					$this->_link = new PDO('mysql:host=127.0.0.1;dbname=casinofacile', "root", "");
+					$this->_link = new PDO('mysql:host=127.0.0.1;dbname=machouille', "root", "");
 					$this->_link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				} 
 				catch(PDOException $e) 
