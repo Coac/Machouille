@@ -50,7 +50,7 @@
 				<li><a href="checkout.php">Checkout</a></li> |
 
 				
-				<li><a href="login.php">
+				<li>
 
 
 					<?php
@@ -60,15 +60,18 @@
 						echo $_SESSION['user']['login'];
 					}
 					else
-						echo "Login";
+						echo "<a href='login.php'> Login" </a>;
 
 				?>
-				</a></li> 
+				</li> 
 
 				<?php
 
 				if(!$core->isUserLogged()){
 					echo "| <li><a href='register.php'>Sign Up</a></li>";
+				}
+				else{
+					echo "| <li><a href='disconnect.php' >Log Out</a></li>";
 				}
 				?>
 			</ul>
@@ -197,3 +200,4 @@
  <div class="clear"></div>
  </div>
 </div>
+
