@@ -1029,7 +1029,7 @@ table {
 	padding:2% 0;
 }
 .register_account table td {
-	width: 100%;
+	width: 0%;
 }
 .register_account form input[type="text"], .register_account form select {
 	font-size:0.95em;
