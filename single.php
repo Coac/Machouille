@@ -38,8 +38,21 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 		         	<h3 class="m_3"><?php echo $product[0]['name'] ?></h3>
 		             <p class="m_5">$<?php echo $product[0]['price'] ?> <a href="#">click for offer</a></p>
 		         	 <div class="btn_form">
-						<form>
+						<form action="addProductCart.php" method="post">
 							<input type="submit" value="buy" title="">
+							<input type="hidden" name="id" value=<?php  ?>>
+							<input type="hidden" name="name" value=<?php  ?>>
+							<select name="quantity">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+							</select>
 						</form>
 					 </div>
 					<span class="m_link"><a href="#">login to save in wishlist</a> </span>
