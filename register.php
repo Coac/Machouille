@@ -2,12 +2,14 @@
           <div class="register_account">
           	<div class="wrap">
     	      <h4 class="title">Create an Account</h4>
-    		   <form>
+    		   <form action="registerscript.php" method="get">
     			 <div class="col_1_of_2 span_1_of_2">
 		   			 <div><input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"></div>
 		    			<div><input type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></div>
-		    			<div><input type="text" value="Login" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Login';}"></div>
-		    			<div><input type="text" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"></div>
+		    			<div><input type="text" name="Login" value="Login" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Login';}"></div>
+		    			<div><input type="text" name="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"></div>
+				    	<div><input type="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></div>
+
 		    	 </div>
 		    	  <div class="col_1_of_2 span_1_of_2">	
 		    		<div><input type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></div>

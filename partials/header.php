@@ -48,8 +48,32 @@
 				<li class="active"><a href="login.php">Account</a></li> |
 				<li><a href="checkout.php">Wishlist</a></li> |
 				<li><a href="checkout.php">Checkout</a></li> |
-				<li><a href="login.php">Log In</a></li> |
-				<li><a href="register.php">Sign Up</a></li>
+
+				
+				<li>
+
+
+					<?php
+					require_once("./classes/Core.class.php"); 
+					$core = new Core();
+					if($core->isUserLogged()){
+						echo $_SESSION['user']['login'];
+					}
+					else
+						echo "<a href='login.php'> Login </a>";
+
+				?>
+				</li> 
+
+				<?php
+
+				if(!$core->isUserLogged()){
+					echo "| <li><a href='register.php'>Sign Up</a></li>";
+				}
+				else{
+					echo "| <li><a href='disconnect.php' >Log Out</a></li>";
+				}
+				?>
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -176,3 +200,4 @@
  <div class="clear"></div>
  </div>
 </div>
+

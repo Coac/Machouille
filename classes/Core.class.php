@@ -13,7 +13,7 @@ Class Core
 
     public function tryAuth($user, $password, $remember = "false")
     { 
-        $data = $this->_db->prepare("SELECT * FROM user WHERE login='" . $user . "' AND passwd = '". $password ."' ", true); 
+        $data = $this->_db->prepare("SELECT * FROM user WHERE login='" . $user . "' AND pwd = '". $password ."' ", true); 
         $data->execute();
         $result = $data->fetchAll();
         if(empty($result)) 

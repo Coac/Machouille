@@ -12,7 +12,8 @@
 		}
 
 		public function adduserbasic($log,$pwd){
-		$data = $this->_db->prepare("SELECT * FROM product, productcategory WHERE product.category=productcategory.id And login='" . $user . "' AND passwd = '". $password ."' ", true); 
+		$data = $this->_db->prepare("INSERT INTO user (login,pwd) VALUES ('" . $log . "','". $pwd ."'); ", false); 
+
         $data->execute();
         $result = $data->fetchAll();
         if(empty($result)) 
