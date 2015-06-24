@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 24 Juin 2015 à 10:24
+-- Généré le :  Mer 24 Juin 2015 à 12:10
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -45,11 +45,21 @@ CREATE TABLE IF NOT EXISTS `order` (
 
 CREATE TABLE IF NOT EXISTS `product` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(15) NOT NULL,
+  `price` double NOT NULL,
+  `name` varchar(100) NOT NULL,
   `category` int(11) NOT NULL DEFAULT '1',
   `img` varchar(40) DEFAULT NULL,
+  `desc` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Contenu de la table `product`
+--
+
+INSERT INTO `product` (`id`, `price`, `name`, `category`, `img`, `desc`) VALUES
+(1, 0, 'Fraise-Framboise-Poulet', 1, '', ''),
+(2, 50, 'Fraise-Chocolat-Banane', 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -61,7 +71,15 @@ CREATE TABLE IF NOT EXISTS `productcategory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(15) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Contenu de la table `productcategory`
+--
+
+INSERT INTO `productcategory` (`id`, `name`) VALUES
+(1, 'tri-gout'),
+(2, '');
 
 -- --------------------------------------------------------
 
