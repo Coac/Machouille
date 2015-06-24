@@ -140,7 +140,7 @@
     </ul>
     
     <!-- *** NAV -->
-  <?php $title = "Index"; include('../../../../../admin/pages/nav.php'); ?>
+  <?php $title = "Index"; include('nav.php'); ?>
 	<!-- start slider -->
     
   <div id="page-wrapper">
