@@ -1,7 +1,7 @@
 <?php  
 
-    require_once("classes//User.class.php");
-    require_once("classes//User.core.php"); 
+    require_once("./classes/User.class.php");
+    require_once("./classes/Core.class.php"); 
  
 
     $user = new User();
@@ -13,7 +13,7 @@
 		$login = $_GET['Login'];
 		$pass = $_GET['password'] ;
 
-		$user->adduserbasic($login,$pwd);
+		$user->adduserbasic($login,$pass);
 		$core->redirect("./");
 
 		}
