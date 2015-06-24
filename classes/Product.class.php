@@ -34,6 +34,30 @@
                 return $result;
             }
         }
+
+        public function getById($id){
+            $data = $this->_db->prepare("SELECT * FROM product WHERE id='" . $id . "'", true); 
+            $data->execute();
+            $result = $data->fetchAll();
+            if(empty($result)) 
+                return false;
+            else
+            {
+                return $result;
+            }
+        }
+
+        public function getCategoryName($id){
+            $data = $this->_db->prepare("SELECT productcategory.name FROM product, productcategory WHERE product.category=productcategory.id AND product.id='" . $id . "'", true); 
+            $data->execute();
+            $result = $data->fetchAll();
+            if(empty($result)) 
+                return false;
+            else
+            {
+                return $result;
+            }
+        }
  
 
     }

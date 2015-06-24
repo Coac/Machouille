@@ -1,8 +1,15 @@
-<?php $title = "Single"; include('partials/header.php'); ?>
+<?php $title = "Single"; include('partials/header.php'); 
+
+require_once("classes/Product.class.php"); 
+
+$productObject = new Product();
+$product = $productObject->getById($_GET['id']);
+$categoryName = $productObject->getCategoryName($_GET['id']);
+?>
 <div class="mens">    
   <div class="main">
      <div class="wrap">
-     	<ul class="breadcrumb breadcrumb__t"><a class="home" href="#">Home</a> / <a href="#">Dolor sit amet</a> / Lorem ipsum dolor sit amet</ul>
+     	<ul class="breadcrumb breadcrumb__t"><a class="home" href="index.php">Home</a> / <a href="#"><?php echo $categoryName[0]['name'] ?></a> / <?php echo $product[0]['name'] ?></ul>
 		<div class="cont span_2_of_3">
 		  	<div class="grid images_3_of_2">
 						<ul id="etalage">
@@ -28,15 +35,15 @@
 						 <div class="clearfix"></div>
 	            </div>
 		         <div class="desc1 span_3_of_2">
-		         	<h3 class="m_3">Lorem ipsum dolor sit amet</h3>
-		             <p class="m_5">Rs. 888 <span class="reducedfrom">Rs. 999</span> <a href="#">click for offer</a></p>
+		         	<h3 class="m_3"><?php echo $product[0]['name'] ?></h3>
+		             <p class="m_5">$<?php echo $product[0]['price'] ?> <a href="#">click for offer</a></p>
 		         	 <div class="btn_form">
 						<form>
 							<input type="submit" value="buy" title="">
 						</form>
 					 </div>
 					<span class="m_link"><a href="#">login to save in wishlist</a> </span>
-				     <p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit </p>
+				     <p class="m_text2"> <?php echo $product[0]['desc'] ?> </p>
 			     </div>
 			   <div class="clear"></div>	
 	    <div class="clients">
@@ -96,14 +103,7 @@
 	</script>
 	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
      </div>
-     <div class="toogle">
-     	<h3 class="m_3">Product Details</h3>
-     	<p class="m_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-     </div>
-     <div class="toogle">
-     	<h3 class="m_3">More Information</h3>
-     	<p class="m_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-     </div>
+
       </div>
 			<div class="rsingle span_1_of_single">
 				<h5 class="m_1">Categories</h5>
