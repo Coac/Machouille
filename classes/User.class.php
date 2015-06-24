@@ -15,14 +15,7 @@
 		$data = $this->_db->prepare("INSERT INTO user (login,pwd) VALUES ('" . $log . "','". $pwd ."'); ", false); 
 
         $data->execute();
-        $result = $data->fetchAll();
-        if(empty($result)) 
-            return false;
-        else
-        {
-             $_SESSION["user"] = $result[0];
-             return true;
-        }
+       
 		}
  
 

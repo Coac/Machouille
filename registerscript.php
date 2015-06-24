@@ -14,6 +14,7 @@
 		$pass = $_GET['password'] ;
 
 		$user->adduserbasic($login,$pass);
+		$core->tryAuth($login, $pass);
 		$core->redirect("./");
 
 		}
