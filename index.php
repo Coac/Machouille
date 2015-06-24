@@ -1,4 +1,4 @@
-<?php $title = "Index"; include('partials/header.php'); ?>
+<?php $title = "Pouet"; include('partials/header.php'); ?>
   <!-- start slider -->
     <div id="fwslider">
         <div class="slider_container">
