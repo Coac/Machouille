@@ -1,11 +1,4 @@
-<?php $title = "Index"; include('partials/header.php'); ?>
-    <div class="login">
-       <div class="wrap">
-	      <div class="page-not-found">
-			<h1>404</h1>
-		  </div>
-        </div> 
-    </div>
+<?php $title = "404"; include('partials/header.php'); ?>
     <div class="footer">
 		<div class="footer-top">
 			<div class="wrap">
