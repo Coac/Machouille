@@ -6,7 +6,7 @@
     			 <div class="col_1_of_2 span_1_of_2">
 		   			 <div><input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"></div>
 		    			<div><input type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></div>
-		    			<div><input type="text" value="E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}"></div>
+		    			<div><input type="text" value="Login" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Login';}"></div>
 		    			<div><input type="text" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"></div>
 		    	 </div>
 		    	  <div class="col_1_of_2 span_1_of_2">	
