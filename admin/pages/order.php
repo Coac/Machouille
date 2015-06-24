@@ -206,7 +206,7 @@
           </div>
           </a> </div>
       </div>
-      <!--
+ 
     <div class="col-lg-3 col-md-6">
         <div class="panel panel-yellow">
           <div class="panel-heading">
@@ -218,14 +218,14 @@
               </div>
             </div>
           </div>
-          <a href="order.html">
+          <a href="#">
           <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
             <div class="clearfix"></div>
           </div>
           </a> </div>
       </div>
       
-      -->
+     
       <div class="col-lg-3 col-md-6">
         <div class="panel panel-red">
           <div class="panel-heading">
@@ -246,49 +246,29 @@
     </div>
     
     
+         <div id="resultat">
+        <!-- Nous allons afficher un retour en jQuery au visiteur -->
+    </div>
+    
+    
     
     <!-- /.row -->
     <div class="register_account">
       <div class="wrap">
-        <h4 class="title">Add an offer</h4>
-        <form action="offerscript.php" method="post">
+        <h4 class="title">Ajoute un chewing gum</h4>
+        <form action="offerscript.php" method="post" id="submit">
           <div class="col_1_of_2 span_1_of_2">
             <div>
-              <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+              <input type="text" value="Name" id ="nom" name="nom" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
             </div>
             <div>
-              <input type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}">
+              <input type="text" value="prix" id="prix" name="prix" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'prix  ';}">
             </div>
-            <div>
-              <input type="text" name="Login" value="Login" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Login';}">
+            
+                        <div>
+              <input type="text" value="Categorie" id="categorie" name="categorie" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Categorie  ';}">
             </div>
-            <div>
-              <input type="text" name="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
-            </div>
-            <div>
-              <input type="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-            </div>
-          </div>
-          <div class="col_1_of_2 span_1_of_2">
-            <div>
-              <input type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}">
-            </div>
-            <div>
-              <select id="country" name="country" onchange="change_country(this.value)" class="frm-field required">
-                <option value="null">Select a Country</option>
-                <option value="AF">Afghanistan</option>
-                <option value="SN">Senegal</option>
-              </select>
-            </div>
-            <div>
-              <input type="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}">
-            </div>
-            <div> </div>
-            <input type="text" value="" class="code">
-            -
-            <input type="text" value="" class="number">
-            <p class="code">Country Code + Phone Number</p>
-          </div>
+            
           <button class="grey">Submit</button>
           <p class="terms">By clicking 'Create Account' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
           <div class="clear"></div>
@@ -298,11 +278,41 @@
    </div>
  
  
+zzzz
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#submit").click(function{
+		alert("go");
+        $.post(
+            'offerscript.php', // Un script PHP que l'on va créer juste après
+            {
+                nom : $("#nom").val();  // Nous récupérons la valeur de nos input que l'on fait passer à connexion.php
+                prix : $("#prix").val();
+				categorie : $("#categorie").val();
+            },
+            'text'
+         );
+
+    });
+
+});
+
+</script>
+ 
+ 
+ 
     <!-- /.row -->
   </div>
   <!-- /#page-wrapper -->
 </div>
 <!-- /#wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <!-- jQuery -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->

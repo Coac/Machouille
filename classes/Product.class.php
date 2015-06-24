@@ -58,6 +58,12 @@
                 return $result;
             }
         }
+		
+		
+		        public function addProduct($prix, $nom, $categorie){
+            $data = $this->_db->prepare("INSERT INTO `machouille`.`product` (`id`, `price`, `name`, `category`, `img`, `desc`) VALUES (NULL, '$prix', '$nom', '$categorie', NULL, '');", true); 
+            $data->execute();
+        }
  
 
     }
