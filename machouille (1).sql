@@ -3,9 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
-
--- Généré le :  Jeu 25 Juin 2015 à 14:50
-
+-- Généré le :  Jeu 25 Juin 2015 à 14:56
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -53,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `img` varchar(40) DEFAULT NULL,
   `desc` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=49 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `product`
@@ -68,7 +66,6 @@ INSERT INTO `product` (`id`, `price`, `name`, `category`, `img`, `desc`) VALUES
 (9, 7, 'Pomme', 3, 'bb6.jpg', ''),
 (10, 10, 'Pruneaux d''Agen', 3, 'cg8.jpg', ''),
 (11, 7, 'Menthe Forte', 3, 'cg9.jpg', '');
-
 
 -- --------------------------------------------------------
 
