@@ -104,13 +104,13 @@
       </div>
       <div class="f-list2">
         <ul>
-          <li class="active"><a href="about.html">Qui sommes-nous ?</a></li>
+          <li class="active"><a href="about.php">Qui sommes-nous ?</a></li>
           |
-          <li><a href="delivery.html">Conditions Générales de Ventes</a></li>
+          <li><a href="#">Conditions Générales de Ventes</a></li>
           |
-          <li><a href="delivery.html">Mentions légales</a></li>
+          <li><a href="#">Mentions légales</a></li>
           |
-          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="about.php">Contactez-nous</a></li>
         </ul>
       </div>
       <div class="clear"></div>
