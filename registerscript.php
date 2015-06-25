@@ -12,9 +12,14 @@
 		if(isset( $_GET['Login'] )&& isset( $_GET['password'] )){
 		$login = $_GET['Login'];
 		$pass = $_GET['password'] ;
+		$name = $_GET['name'] ;
 
-		$user->adduserbasic($login,$pass);
-		$core->tryAuth($login, $pass);
+		$email = $_GET['email'] ;
+
+		$adre = $_GET['adress'] ;
+
+
+		$user->adduserbasic($login,$pass,$name,$adress,$email);
 		$core->redirect("./");
 
 		}

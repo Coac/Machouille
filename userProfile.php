@@ -45,9 +45,19 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 <style type="text/css">
   #updateFrm {
     visibility: hidden;
- }
-  </style>
+    margin-bottom: 8%;
 
+ }
+ #info{
+ 	    margin-bottom: 8%;
+
+ }
+ #nothing{
+ 	 	    margin-bottom: 8%;
+
+ }
+
+  </style>
 
 
 <div class="row">
@@ -71,18 +81,20 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 
 <div class="col-md-6" id="updateFrm">
 	<h4 class="title">Edit your profil </h4>
+	<div id="form">
 <form >
 	<p>New Password  <input id="password" class="form-control" type="password" name="password"> </p>
-	<p>New First Name   <input id="fName" class="form-control" type="text" name="fName"></p>
-	<p>New Last Name   	<input id="lName" class="form-control" type="text" name="lName"></p>
+	<p>New First Name   <input id="fName" class="form-control" type="text" name="fname"></p>
+	<p>New Last Name   	<input id="lName" class="form-control" type="text" name="lname"></p>
 	<p>New Adress <input id="adress" class="form-control" type="text" name="adress">
 	</p>
-</form>
-<div class="button1">
-		<input class="btn btn-default" id="updating" type="button" value="Set">
+	
+			<a class="btn btn-default" onclick="doSomethingt();" role="button">See the info</a>
+			<input class="btn btn-default" type="submit" value="Submit" id="btn">
 
-					   <a class="btn btn-default" onclick="doSomethingt();" role="button">See the info</a>
-					 </div>
+</form>
+
+</div>
 </div>
 
 </div>
@@ -93,7 +105,19 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 <div class="row">
 	<div class="col-md-2"></div>
 <div class="col-md-6">
-<h2 class="title">Orders Timeline</h2>
+				    <tbody>
+<?php
+	include("classes/Product.class.php");
+	$product = new Product();
+	$p = $product->getUserOrders($_SESSION['user']['id']);
+	//var_dump($p);
+	if(count($p)>0){
+	for($i = 0; $i < count($p); $i++) {
+
+
+
+		?>
+<h4 class="title">Orders Timeline</h2>
 
 	<table class="table table-hover">
 			      <thead>
@@ -104,17 +128,7 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 			          <th></th>
 			        </tr>
 			      </thead>
-			    <tbody>
-<?php
-	include("classes/Product.class.php");
-	$product = new Product();
-	$p = $product->getUserOrders($_SESSION['user']['id']);
-	//var_dump($p);
-	for($i = 0; $i < count($p); $i++) {
 
-
-
-		?>
 
 		<tr>
 		  <th scope='row'><?php $p[$i]['category']?> </th>
@@ -124,7 +138,10 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 
 
 		
-<?php	}
+<?php	}}
+	else{
+		echo '<h4 class="title" id="nothing">Aucunes commandes à afficher</h4>';
+	}
 ?>
 
  </tbody>
@@ -132,54 +149,28 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 </body>
 
 <script type="text/javascript">
-	jQuery(document).ready(function() {
-			document.getElementById('updating').onclick = function() {
-				var count = 0;
-				if(document.getElementById('login').value != '' ) {
-					count = count + 1;
-					$.ajax( {
-					url: "setUserParams.php",
-					data: "paramName=login&param=" + document.getElementById('login').value,
-					type: 'post',
-					});
-				}
-				if(document.getElementById('password').value != '') {
-					count = count + 1;
-					$.ajax( {
-					url: "setUserParams.php",
-					data: "paramName=pwd&param=" + document.getElementById('password').value,
-					type: 'post',
-					});
-				}
-				if(document.getElementById('fName').value != '') {
-					count = count + 1;
-					$.ajax( {
-					url: "setUserParams.php",
-					data: "paramName=firstname&param=" + document.getElementById('fName').value,
-					type: 'post',
-					});
-				}
-				if(document.getElementById('lName').value != '') {
-					count = count + 1;
-					$.ajax( {
-					url: "setUserParams.php",
-					data: "paramName=lastname&param=" + document.getElementById('lName').value,
-					type: 'post',
-					});
-				}
-				if(document.getElementById('adress').value != '') {
-					count = count + 1;
-					$.ajax( {
-					url: "setUserParams.php",
-					data: "paramName=adress&param=" + document.getElementById('adress').value,
-					type: 'post',
-					});
-				}
-				if (count > 0) {
-					alert("Profile parameters succesfully set ! ");
-				}
-			};
-		});
+	
+		      $(function () {
+
+		        $('form').on('submit', function (e) {
+
+		          e.preventDefault();
+
+		          $.ajax({
+		            type: 'post',
+		            url: 'setUserParams.php',
+		            data: $('form').serialize(),
+		            success: function () {
+		             myVar=setTimeout(function(){location.reload()},100)
+
+		            }
+		          });
+
+		        });
+
+		      });
+		 
+
 </script>
 </div>
 

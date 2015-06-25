@@ -4,7 +4,7 @@
     	      <h4 class="title">Create an Account</h4>
     		   <form action="registerscript.php" method="get">
     			 <div class="col_1_of_2 span_1_of_2">
-		   			 <div><input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"></div>
+		   			 <div><input type="text" name="name" value="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"></div>
 		    			<div><input type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></div>
 		    			<div><input type="text" name="Login" value="Login" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Login';}"></div>
 		    			<div><input type="text" name="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"></div>
@@ -12,7 +12,7 @@
 
 		    	 </div>
 		    	  <div class="col_1_of_2 span_1_of_2">	
-		    		<div><input type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></div>
+		    		<div><input type="text" name="adress" value="address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></div>
 		    		<div><select id="country" name="country" onchange="change_country(this.value)" class="frm-field required">
 		            <option value="null">Select a Country</option>         
 		            <option value="AX">Åland Islands</option>
