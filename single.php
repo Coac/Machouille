@@ -37,8 +37,8 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 		         <div class="desc1 span_3_of_2">
 		         	<h3 class="m_3"><?php echo $product[0]['name'] ?></h3>
 		             <p class="m_5">$<?php echo $product[0]['price'] ?> <a href="#">click for offer</a></p>
-		         	 <div class="btn_form">
-						<form action="addProductCart.php" method="post">
+		         	 <div class="btn_form" id="form">
+						<form>
 							<input type="submit" value="buy" title="">
 							<input type="hidden" name="id" value=<?php echo $product[0]['id'] ?>>
 							<input type="hidden" name="name" value=<?php echo $product[0]['name']  ?>>
@@ -249,4 +249,37 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 			 <div class="clear"></div>
 		   </div>
 		</div>
+
+		<script>
+		
+						
+			
+		      $(function () {
+
+		        $('form').on('submit', function (e) {
+
+		          e.preventDefault();
+
+		          $.ajax({
+		            type: 'post',
+		            url: 'addProductCart.php',
+		            data: $('form').serialize()
+		          });
+		          
+		          myVar=setTimeout(function(){location.reload()},100)
+		        });
+
+		      });
+		 
+
+		</script>
+
+
+
+
+
+
+
+
+
 	<?php include('partials/bottomPage.php'); ?>
