@@ -89,7 +89,13 @@
             $data = $this->_db->prepare("INSERT INTO `machouille`.`product` (`id`, `price`, `name`, `category`, `img`, `desc`) VALUES (NULL, '$prix', '$nom', '$categorie', '$name', '');", true); 
             $data->execute();
         }
- 
+		
+		public function getUserOrders($id){
+            $data = $this->_db->prepare("SELECT p.category, p.name, p.price FROM product p, productodered po, user u, orders od WHERE u.id = " . $id . " and u.id = od.iduser and po.idorder = od.id and p.id = po.idproduct;", true); 
+            $data->execute();
+			$result = $data->fetchAll();
+			return $result;
+        }
 
     }
 

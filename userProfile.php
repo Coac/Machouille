@@ -1,5 +1,7 @@
+
 <?php
-	include('partials/headerTop.php');
+	$title = "Hey there, bitch!" ;
+	include('partials/header.php');
 ?>
 <script type="text/javascript">
 	jQuery(document).ready(function() {
@@ -29,7 +31,8 @@
 	</br></br>
 </div>
 
-<form id="updateFrm" method="post">
+
+<form id="updateFrm">
 	<p>New Login</p><br>
 	<input id="login"type="text" name="login">
 	<br>
@@ -45,36 +48,68 @@
 	<p>New Adress</p><br>
 	<input id="adress" type="text" name="adress">
 	<br><br>
-	<input id="updating" type="submit" value="Valider">
+	<input id="updating" type="button" value="Set">
 </form>
 
 <h2>Orders Timeline</h2>
 <?php
-	$connection = mysqli_connect("localhost","root","usbw");				
-	if ( ! $connection )
-	die ("connection impossible");
-	mysqli_select_db($connection, "machouille") or die ("connection error");
-	$requete = mysqli_query($connection, "SELECT p.category, p.name, p.price FROM product p, productordered po, user u, order or WHERE u.id = " . $_SESSION['user']['login'] . " and u.id = or.iduser and po.idorder = or.id and p.id = po.idproduct;");
+	include("classes/Product.class.php");
+	$product = new Product();
+	$p = $product->getUserOrders($_SESSION['user']['id']);
+	//var_dump($p);
+	for($i = 0; $i < count($p); $i++) {
+		echo $p[$i]['category'] . " | " . $p[$i]['name'] . " | " . $p[$i]['price']."</br>";
+		
+	}
 ?>
 </body>
 
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 			document.getElementById('updating').onclick = function() {
-				if(document.getElementById('login').value != '') {
-					$requete = mysqli_query($connection, "UPDATE user SET login = ' " . document.getElementById('login').value . " ' WHERE id = " . $_SESSION['user']['id'] . ";");
+				var count = 0;
+				if(document.getElementById('login').value != '' ) {
+					count = count + 1;
+					$.ajax( {
+					url: "setUserParams.php",
+					data: "paramName=login&param=" + document.getElementById('login').value,
+					type: 'post',
+					});
 				}
 				if(document.getElementById('password').value != '') {
-					$requete = mysqli_query($connection, "UPDATE user SET pwd = ' " . document.getElementById('password').value . " ' WHERE id = " . $_SESSION['user']['id'] . ";");
+					count = count + 1;
+					$.ajax( {
+					url: "setUserParams.php",
+					data: "paramName=pwd&param=" + document.getElementById('password').value,
+					type: 'post',
+					});
 				}
 				if(document.getElementById('fName').value != '') {
-					$requete = mysqli_query($connection, "UPDATE user SET firstname = ' " . document.getElementById('fName').value . " ' WHERE id = " . $_SESSION['user']['id'] . ";");
+					count = count + 1;
+					$.ajax( {
+					url: "setUserParams.php",
+					data: "paramName=firstname&param=" + document.getElementById('fName').value,
+					type: 'post',
+					});
 				}
 				if(document.getElementById('lName').value != '') {
-					$requete = mysqli_query($connection, "UPDATE user SET lastname = ' " . document.getElementById('lName').value . " ' WHERE id = " . $_SESSION['user']['id'] . ";");
+					count = count + 1;
+					$.ajax( {
+					url: "setUserParams.php",
+					data: "paramName=lastname&param=" + document.getElementById('lName').value,
+					type: 'post',
+					});
 				}
 				if(document.getElementById('adress').value != '') {
-					$requete = mysqli_query($connection, "UPDATE user SET adress = ' " . document.getElementById('adress').value . " ' WHERE id = " . $_SESSION['user']['id'] . ";");
+					count = count + 1;
+					$.ajax( {
+					url: "setUserParams.php",
+					data: "paramName=adress&param=" + document.getElementById('adress').value,
+					type: 'post',
+					});
+				}
+				if (count > 0) {
+					alert("Profile parameters succesfully set ! ");
 				}
 			};
 		});
