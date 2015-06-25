@@ -56,7 +56,7 @@
 			</ul>
 		</li>
 	</ul>
-    <ul class="last"><li><a href="checkout.php">Cart(<?php
+    <ul class="last"><li><a href="checkout.php">Votre Panier (<?php
 
 				if(isset($_SESSION["order"])){
 					echo count($_SESSION["order"]);
