@@ -191,8 +191,24 @@
 	<ul class="icon1 sub-icon1 profile_img">
 		<li><a class="active-icon c2" href="#"> </a>
 			<ul class="sub-icon1 list">
-				<li><h3>No Products</h3><a href=""></a></li>
-				<li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+				<li><h3>Votre panier </h3><?php
+
+				if(isset($_SESSION["order"])){
+					echo " <li><p> vous avez   " .count($_SESSION["order"]). "  produits </p></li>"; 
+					foreach ($_SESSION["order"] as $key => $value) {
+					?>
+					<li><p> <?php echo $value["qtt"] . "  ". $value["name"] ;?> </p></li>
+					<?php
+					}
+					echo '<li><p> <a class="btn btn-default" onclick="doSomething();" role="button">Delete all the items</a></p> </li>';
+				}
+
+				
+				else
+					echo '<li><p>  Votre panier est vide </p></li>';
+				
+				?><a href=""></a></li>
+				
 			</ul>
 		</li>
 	</ul>
@@ -212,4 +228,16 @@
  <div class="clear"></div>
  </div>
 </div>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+function doSomething() {
+    $.get("destroybasket.php");
+ 	myVar=setTimeout(function(){location.reload()},100);
+
+    return false;
+}
+</script>
+
 
