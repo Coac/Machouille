@@ -56,7 +56,7 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 		 	<?php
 		 	foreach ($res as $key => $value) {
 		 	?>	
-			<li><img <?php echo 'src="images/'.$value['img'].'"'; ?>/><a href="#"><?php echo $cat['0']['name']; ?></a><p><?php echo substr($value['name'],0,-5).".."; ?></p></li>
+			<li><a href=<?php echo '"single.php?id=' . $value['id'].'"' ?>><img <?php echo 'src="images/'.$value['img'].'"'; ?>/><p><?php echo substr($value['name'],0,-5).".."; ?></p></a></li>
 			<?php } ?>
 		 </ul>
 	<script type="text/javascript">
