@@ -3,7 +3,7 @@
   <div class="main">
      <div class="wrap">
 		<div class="cont span_2_of_3">
-		  	<h2 class="head">Men's</h2>
+		  	<h2 class="head">Chewing-gum</h2>
 		  	<div class="mens-toolbar">
               <div class="sort">
                	<div class="sort-by">

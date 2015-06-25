@@ -90,17 +90,17 @@
 			<div class="menu">
             <ul class="megamenu skyblue">
 		<li class="active grid"><a href="index.php">Home</a></li>
-		<li><a class="color4" href="#">women</a>
+		<li><a class="color4" href="#">Tri-gout</a>
 			<div class="megapanel">
 				<div class="row">
 					<div class="col1">
 						<div class="h_nav">
 							<h4>Contact Lenses</h4>
 							<ul>
-								<li><a href="womens.php">Daily-wear soft lenses</a></li>
-								<li><a href="womens.php">Extended-wear</a></li>
-								<li><a href="womens.php">Lorem ipsum </a></li>
-								<li><a href="womens.php">Planned replacement</a></li>
+								<li><a href="products.php?category=tri-gout">Daily-wear soft lenses</a></li>
+								<li><a href="products.php?category=tri-gout">Extended-wear</a></li>
+								<li><a href="products.php?category=tri-gout">Lorem ipsum </a></li>
+								<li><a href="products.php?category=tri-gout">Planned replacement</a></li>
 							</ul>	
 						</div>							
 					</div>
@@ -108,10 +108,10 @@
 						<div class="h_nav">
 							<h4>Sun Glasses</h4>
 							<ul>
-								<li><a href="womens.php">Heart-Shaped</a></li>
-								<li><a href="womens.php">Square-Shaped</a></li>
-								<li><a href="womens.php">Round-Shaped</a></li>
-								<li><a href="womens.php">Oval-Shaped</a></li>
+								<li><a href="products.php?category=tri-gout">Heart-Shaped</a></li>
+								<li><a href="products.php?category=tri-gout">Square-Shaped</a></li>
+								<li><a href="products.php?category=tri-gout">Round-Shaped</a></li>
+								<li><a href="products.php?category=tri-gout">Oval-Shaped</a></li>
 							</ul>	
 						</div>							
 					</div>
@@ -119,11 +119,11 @@
 						<div class="h_nav">
 							<h4>Eye Glasses</h4>
 							<ul>
-								<li><a href="womens.php">Anti Reflective</a></li>
-								<li><a href="womens.php">Aspheric</a></li>
-								<li><a href="womens.php">Bifocal</a></li>
-								<li><a href="womens.php">Hi-index</a></li>
-								<li><a href="womens.php">Progressive</a></li>
+								<li><a href="products.php?category=tri-gout">Anti Reflective</a></li>
+								<li><a href="products.php?category=tri-gout">Aspheric</a></li>
+								<li><a href="products.php?category=tri-gout">Bifocal</a></li>
+								<li><a href="products.php?category=tri-gout">Hi-index</a></li>
+								<li><a href="products.php?category=tri-gout">Progressive</a></li>
 							</ul>	
 						</div>												
 					</div>
