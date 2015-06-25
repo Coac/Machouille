@@ -11,6 +11,9 @@ function doSomething() {
 
 $('#info').slideToggle();
 
+document.getElementById("updateFrm").style.visibility = "visible";
+
+
 myVar=setTimeout(function(){$('#updateFrm').slideToggle();},800)
 
 }
@@ -39,6 +42,13 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 
 </h1>
 </br></br>
+<style type="text/css">
+  #updateFrm {
+    visibility: hidden;
+ }
+  </style>
+
+
 
 <div class="row">
 	<div class="col-md-2"></div>
@@ -84,16 +94,41 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 	<div class="col-md-2"></div>
 <div class="col-md-6">
 <h2 class="title">Orders Timeline</h2>
+
+	<table class="table table-hover">
+			      <thead>
+			        <tr>
+			          <th>Category id</th>
+			          <th>Name product</th>
+			          <th>Price</th>
+			          <th></th>
+			        </tr>
+			      </thead>
+			    <tbody>
 <?php
 	include("classes/Product.class.php");
 	$product = new Product();
 	$p = $product->getUserOrders($_SESSION['user']['id']);
 	//var_dump($p);
 	for($i = 0; $i < count($p); $i++) {
-		echo $p[$i]['category'] . " | " . $p[$i]['name'] . " | " . $p[$i]['price']."</br>";
+
+
+
+		?>
+
+		<tr>
+		  <th scope='row'><?php $p[$i]['category']?> </th>
+          <td><?php echo $p[$i]['name'] ?></td>
+          <td><?php echo $p[$i]['price'] ?></td>
+        </tr> 
+
+
 		
-	}
+<?php	}
 ?>
+
+ </tbody>
+</table>
 </body>
 
 <script type="text/javascript">
