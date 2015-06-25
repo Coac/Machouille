@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.2
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Client: localhost
--- Généré le: Jeu 25 Juin 2015 à 09:47
--- Version du serveur: 5.6.13
--- Version de PHP: 5.4.17
+-- Client :  127.0.0.1
+-- Généré le :  Jeu 25 Juin 2015 à 14:45
+-- Version du serveur :  5.6.17
+-- Version de PHP :  5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,10 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `machouille`
+-- Base de données :  `machouille`
 --
-CREATE DATABASE IF NOT EXISTS `machouille` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `machouille`;
 
 -- --------------------------------------------------------
 
@@ -53,21 +51,17 @@ CREATE TABLE IF NOT EXISTS `product` (
   `img` varchar(40) DEFAULT NULL,
   `desc` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=49 ;
 
 --
 -- Contenu de la table `product`
 --
 
 INSERT INTO `product` (`id`, `price`, `name`, `category`, `img`, `desc`) VALUES
-(1, 2, 'Fraise-Framboise-Poulet', 1, '', ''),
-(2, 50, 'Fraise-Chocolat-Banane', 1, '', ''),
-(5, 15, 'Grenadine - Menthe - Poire', 3, NULL, ''),
-(6, 2, 'Grenadine - Pruneaux - Mandarine', 3, NULL, ''),
-(8, 5, 'Fraise façon crumble', 2, NULL, ''),
-(9, 7, 'Pomme', 3, NULL, ''),
-(10, 10, 'Pruneaux d''Agen', 3, NULL, ''),
-(11, 7, 'Menthe Forte', 3, NULL, '');
+(29, 15, 'la jolie maman de victor', 0, 'bb4.jpg', ''),
+(46, 52, 'ggg', 2, 'test.jpg', ''),
+(47, 5555, 'victor a un bras de  gÃ©ant', 2, 'op.jpg', ''),
+(48, 25, 'samy a ses regles', 3, 'trololo.jpg', '');
 
 -- --------------------------------------------------------
 
