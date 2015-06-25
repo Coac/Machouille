@@ -33,7 +33,7 @@
 			<div class="menu">
             <ul class="megamenu skyblue">
 		<li class="active grid"><a href="index.php">Home</a></li>
-		<li><a class="color4" href="#">Tri-gout</a>
+		<li><a class="color4" href="products.php?category=tri-gout">Tri-gout</a>
 			<div class="megapanel">
 				<div class="row">
 					<div class="col1">
@@ -73,16 +73,16 @@
 				  </div>
 				</div>
 			</li>				
-			<li><a class="color5" href="#">Men</a>
+			<li><a class="color5" href="products.php?category=cremeux">Cremeux</a>
 			<div class="megapanel">
 				<div class="col1">
 						<div class="h_nav">
 							<h4>Contact Lenses</h4>
 							<ul>
-								<li><a href="mens.php">Daily-wear soft lenses</a></li>
-								<li><a href="mens.php">Extended-wear</a></li>
-								<li><a href="mens.php">Lorem ipsum </a></li>
-								<li><a href="mens.php">Planned replacement</a></li>
+								<li><a href="products.php?category=cremeux">Daily-wear soft lenses</a></li>
+								<li><a href="products.php?category=cremeux">Extended-wear</a></li>
+								<li><a href="products.php?category=cremeux">Lorem ipsum </a></li>
+								<li><a href="products.php?category=cremeux">Planned replacement</a></li>
 							</ul>	
 						</div>							
 					</div>
@@ -90,10 +90,10 @@
 						<div class="h_nav">
 							<h4>Sun Glasses</h4>
 							<ul>
-								<li><a href="mens.php">Heart-Shaped</a></li>
-								<li><a href="mens.php">Square-Shaped</a></li>
-								<li><a href="mens.php">Round-Shaped</a></li>
-								<li><a href="mens.php">Oval-Shaped</a></li>
+								<li><a href="products.php?category=cremeux">Heart-Shaped</a></li>
+								<li><a href="products.php?category=cremeux">Square-Shaped</a></li>
+								<li><a href="products.php?category=cremeux">Round-Shaped</a></li>
+								<li><a href="products.php?category=cremeux">Oval-Shaped</a></li>
 							</ul>	
 						</div>							
 					</div>
@@ -101,18 +101,18 @@
 						<div class="h_nav">
 							<h4>Eye Glasses</h4>
 							<ul>
-								<li><a href="mens.php">Anti Reflective</a></li>
-								<li><a href="mens.php">Aspheric</a></li>
-								<li><a href="mens.php">Bifocal</a></li>
-								<li><a href="mens.php">Hi-index</a></li>
-								<li><a href="mens.php">Progressive</a></li>
+								<li><a href="products.php?category=cremeux">Anti Reflective</a></li>
+								<li><a href="products.php?category=cremeux">Aspheric</a></li>
+								<li><a href="products.php?category=cremeux">Bifocal</a></li>
+								<li><a href="products.php?category=cremeux">Hi-index</a></li>
+								<li><a href="products.php?category=cremeux">Progressive</a></li>
 							</ul>	
 						</div>												
 					</div>
 				</div>
 			</li>
-			<li><a class="color6" href="other.php">Other</a></li>
-			<li><a class="color7" href="other.php">Purchase</a></li>
+			<li><a class="color6" href="products.php?category=fruit">Fruit</a></li>
+			<li><a class="color7" href="about.php">About</a></li>
 		</ul>
 		</div>
 	</div>
