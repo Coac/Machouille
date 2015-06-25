@@ -19,7 +19,7 @@
          <div class="register_account">
            <div class="wrap">
     	     <?php
-    	     if(!isset($_SESSION["order"])){
+    	     if(!isset($_SESSION["order"])||count($_SESSION["order"])==0){
     	     	echo '<h4 class="title">Shopping cart is empty</h4>' ;
     	     	echo  '<p class="cart">You have no items in your shopping cart.<br>Click<a href="index.html"> here</a> to continue shopping</p>';
     	     }
