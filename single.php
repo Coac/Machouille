@@ -109,91 +109,88 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
      </div>
 
       </div>
-			<div class="rsingle span_1_of_single">
+						<div class="rsidebar span_1_of_left">
 				<h5 class="m_1">Categories</h5>
 					<select class="dropdown" tabindex="8" data-settings='{"wrapperClass":"metro"}'>
-						<option value="1">Mens</option>
+						<option value="1">Tri-gout</option>
 						<option value="2">Sub Category1</option>
 						<option value="3">Sub Category2</option>
 						<option value="4">Sub Category3</option>
 					</select>
 					<select class="dropdown" tabindex="8" data-settings='{"wrapperClass":"metro"}'>
-						<option value="1">Womens</option>
+						<option value="1">Cremeux</option>
 						<option value="2">Sub Category1</option>
 						<option value="3">Sub Category2</option>
 						<option value="4">Sub Category3</option>
 					</select>
 					<ul class="kids">
-						<li><a href="#">Kids</a></li>
-						<li class="last"><a href="#">Glasses Shop</a></li>
+						<li><a href="#">Fruits</a></li>
 					</ul>
                    <section  class="sky-form">
-					<h4>Price</h4>
+					<h4>Prix</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Rs 500 - Rs 700</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>0 - 5 e</label>
 							</div>
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 700 - Rs 1000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 1000 - Rs 1500</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 1500 - Rs 2000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 2000 - Rs 2500</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Rs 2500 - Rs 3000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 3500 - Rs 4000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 4000 - Rs 4500</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 4500 - Rs 5000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 5000 - Rs 5500</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 5500 - Rs 6000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 6000 - Rs 6500</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 6500 - Rs 7000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 7000 - Rs 7500</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 7500 - Rs 8000</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rs 8000 - Rs 8500</label>	
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>0 - 5 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>5 - 9 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>10 - 19 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>20 - 29 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>30 - 39 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>40 - 49 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>50 - 59 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>60 - 69 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>70 - 79 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>80 - 89 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>90 - 99 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>100 - 109 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>110 - 119 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>120 - 129 e</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>130 - ... </label>	
 							</div>
 						</div>
 		        </section>
 		       <section  class="sky-form">
-					<h4>Brand Name</h4>
+					<h4>Parfums</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>John Jacobs</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Abricot</label>
 							</div>
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Tag Heuer</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Lee Cooper</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Mikli</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>S Oliver</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Hackett</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Killer</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>IDEE</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Vogue</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Gunnar</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Accu Reader</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>CAT</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Excellent</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Feelgood</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Odysey</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Animal</label>	
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Banane</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Cassis</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Citron</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Cocktail d'agrumes</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Figue</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fraise</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Framboise</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Goyave</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Kiwi</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Litchi</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Litchi</label>
 							</div>
 						</div>
 		       </section>
-		       <section  class="sky-form">
+		       <!-- <section  class="sky-form">
 					<h4>Frame Shape</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
 								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Pilot</label>
 							</div>
 							<div class="col col-4">
-							    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rectangle</label>
+								
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Rectangle</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Square</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Round</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Others</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Cat Eyes</label>
 								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Wrap Around</label>
-						    </div>
+								
+							</div>
 						</div>
-		       </section>
-		       <section  class="sky-form">
+		       </section> -->
+		       <!--<section  class="sky-form">
 					<h4>Frame Size</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
@@ -221,7 +218,7 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 							</div>
 						</div>
 		       </section>
-		       <section  class="sky-form">
+		       <!-- <section  class="sky-form">
 					<h4>Colors</h4>
 						<ul class="color-list">
 							<li><a href="#"> <span class="color1"> </span><p class="red">Red</p></a></li>
@@ -232,9 +229,10 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 							<li><a href="#"> <span class="color6"> </span><p class="red">Orange</p></a></li>
 							<li><a href="#"> <span class="color7"> </span><p class="red">Gray</p></a></li>
 					   </ul>
-		       </section>
+		       </section>-->
+		      </div>
 		       <script src="js/jquery.easydropdown.js"></script>
-		      </div
+		      </div>
 		      <div class="clear"></div>
 			</div>
 			 <div class="clear"></div>

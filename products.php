@@ -51,7 +51,7 @@
 			<div class="rsidebar span_1_of_left">
 				<h5 class="m_1">Categories</h5>
 					<select class="dropdown" tabindex="8" data-settings='{"wrapperClass":"metro"}'>
-						<option value="1">Tri-gout</option>
+						<option value="1">Tri-gouts</option>
 						<option value="2">Sub Category1</option>
 						<option value="3">Sub Category2</option>
 						<option value="4">Sub Category3</option>
@@ -69,7 +69,7 @@
 					<h4>Prix</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>0 - 5 €</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>0 - 5 e</label>
 							</div>
 							<div class="col col-4">
 								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>0 - 5 e</label>
