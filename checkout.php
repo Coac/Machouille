@@ -1,7 +1,21 @@
 
 
-
 <?php $title = "Checkout"; include('partials/header.php'); ?>
+
+<?php
+  if(isset($_GET["id"])){
+
+    foreach ($_SESSION["order"] as $key => $value) {
+      if ($value['id']==$_GET["id"]) {
+            unset($_SESSION["order"][$key]);
+# code...
+      }
+      # code...
+    }
+  }
+  
+  
+?>
          <div class="register_account">
            <div class="wrap">
     	     <?php
@@ -25,13 +39,13 @@
 			      </thead>
 			    <tbody>
 			   <?php
-    	     	foreach ($arr as &$value) {
+    	     	foreach ($arr as $key => $value) {
    					?>
    							<tr>
-					          <th scope='row'></th>
+					          <th scope='row'><a class="btn btn-default" href=<?php echo 'checkout.php?id=' . $value['id'] ?> role="button">Destroy item</a></th>
 					          <td><?php echo $value['name'] ?></td>
 					          <td><?php echo $value['qtt'] ?></td>
-					          <td><a href=<?php echo 'single.php?id=' . $value['id'] ?>> voir fiche produit</a></td>
+					          <td><a href=<?php echo 'single.php?id=' .  $value['id'] ?>> voir fiche produit</a></td>
 					        </tr> 
 				<?php 		}
            ?>
@@ -39,7 +53,7 @@
 				      </tbody>
 					    </table>
 
-              <a class="btn btn-default" onclick="doSomething();" role="button">Delete all the items</a>
+              <a class="btn btn-default" onclick="destroyb();" role="button">Delete all the items</a>
 
     	     <?php     }
            ?>
@@ -51,12 +65,13 @@
 
 
 <script type="text/javascript">
-function doSomething() {
+function destroyb() {
     $.get("destroybasket.php");
   myVar=setTimeout(function(){location.reload()},100);
 
     return false;
 }
+
 </script>
 
 
