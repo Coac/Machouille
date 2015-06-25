@@ -66,12 +66,14 @@
 				    </script>
 		    <div class="slider-wrapper theme-default">
               <div id="slider" class="nivoSlider">
-                <img src="images/t-img1.jpg"  alt="" />
-               	<img src="images/t-img2.jpg"  alt="" />
-                <img src="images/t-img3.jpg"  alt="" />
+                <img src="images/cg12.jpg"  alt="" />
+               	<img src="images/cg3.jpg"  alt="" />
+                <img src="images/cg4.jpg"  alt="" />
+                <img src="images/cg6.jpg"  alt="" />
+                <img src="images/cg7.jpg"  alt="" />
               </div>
              </div>
-              <div class="btn"><a href="single.html">Check it Out</a></div>
+              <div class="btn"><a href="products.php">Check it Out</a></div>
              </div>
            <div class="top-border"> </div>
 			<div class="sidebar-bottom">
