@@ -11,10 +11,10 @@
       <div class="slide_content">
         <div class="slide_content_wrap">
           <!-- Text title -->
-          <h4 class="title">Aluminium Club</h4>
+          <h4 class="title">Depuis 1922</h4>     
           <!-- /Text title -->
           <!-- Text description -->
-          <p class="description">Experiance ray ban</p>
+          <p class="description">Pierre-Auguste Gauhm et HEnri Mamacher</p>
           <!-- /Text description -->
         </div>
       </div>
@@ -24,8 +24,8 @@
     <div class="slide"> <img src="images/cg1.jpg" alt=""/>
       <div class="slide_content">
         <div class="slide_content_wrap">
-          <h4 class="title">consectetuer adipiscing </h4>
-          <p class="description">diam nonummy nibh euismod</p>
+          <h4 class="title">Notre specialite</h4>
+          <p class="description">Le Chewing-gum tri-gout</p>
         </div>
       </div>
     </div>
@@ -34,8 +34,8 @@
     <div class="slide"> <img src="images/cg10.jpg" alt=""/>
       <div class="slide_content">
         <div class="slide_content_wrap">
-          <h4 class="title">Aller Paris</h4>
-          <p class="description">diam nonummy nibh euismod</p>
+          <h4 class="title">Notre classique le melange de saveur</h4>
+          <p class="description"> Citron / Enrobage Chocolat / Coeur de Coco </p>
         </div>
       </div>
     </div>
