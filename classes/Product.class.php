@@ -12,7 +12,7 @@
         }
 
         public function getByCategoryName($name){
-            $data = $this->_db->prepare("SELECT * FROM product, productcategory WHERE product.category=productcategory.id And productcategory.name='" . $name . "'", true); 
+            $data = $this->_db->prepare("SELECT product.name,product.price, product.id FROM product, productcategory WHERE product.category=productcategory.id And productcategory.name='" . $name . "'", true); 
             $data->execute();
             $result = $data->fetchAll();
             if(empty($result)) 
