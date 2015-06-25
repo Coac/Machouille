@@ -43,6 +43,8 @@
 	<?php
 			if( isset($_GET['category']) &&  $_GET['category'] !="")
 				$category = $_GET['category'];
+			else if( isset($_GET['search']) &&  $_GET['search'] !="")
+				$search = $_GET['search'];
 			 include('classes/displayProducts.php'); ?>
 		 	 							 			    
 		  </div>

@@ -6,9 +6,8 @@ $nbProductToDisplay = 10;
 $productObject = new Product();
 if(isset($category) && $category != "")
 	$products = $productObject->getByCategoryName($category);
-else if(isset($_GET['name']) && $_GET['name'] != "")
-	$products = $productObject->getByName($_GET['name']);
-
+else if(isset($search) && $search != "")
+	$products = $productObject->getByName($search);
 else
 	$products = $productObject->getAll();
 
@@ -52,6 +51,8 @@ for ($i=0; $i < $nbProductToDisplay && $i<count($products); $i++) {
 
 <?php
 }
+else
+	echo "No product found";
 ?>
 <div class="clear"></div>
 </div>

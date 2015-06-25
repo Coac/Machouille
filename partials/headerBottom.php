@@ -118,9 +118,9 @@
 	</div>
    <div class="header-bottom-right">
           <div class="search">
-     		<form methode="get"	action="classes/displayProducts.php">  
-				<input type="text" name="name" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-				<input type="submit" value="Subscribe" id="submit" name="submit">
+     		<form methode="get"	action="products.php">  
+				<input type="text" name="search" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+				<input type="submit" value="Subscribe" id="submit">
 				<div id="response"> </div>
 			</form>
 	 </div>
