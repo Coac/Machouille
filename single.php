@@ -15,22 +15,11 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image" src="images/s-img.jpg" class="img-responsive" />
-									<img class="etalage_source_image" src="images/s1.jpg" class="img-responsive" title="" />
+									<img class="etalage_thumb_image" src=<?php echo "images/" . $product[0]['img'] ?> class="img-responsive" />
+								
 								</a>
 							</li>
-							<li>
-								<img class="etalage_thumb_image" src="images/s-img1.jpg" class="img-responsive" />
-								<img class="etalage_source_image" src="images/s2.jpg" class="img-responsive" title="" />
-							</li>
-							<li>
-								<img class="etalage_thumb_image" src="images/s-img2.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/s3.jpg" class="img-responsive"  />
-							</li>
-						    <li>
-								<img class="etalage_thumb_image" src="images/s4.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/s-img3.jpg" class="img-responsive"  />
-							</li>
+							
 						</ul>
 						 <div class="clearfix"></div>
 	            </div>
