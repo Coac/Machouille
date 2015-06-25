@@ -77,8 +77,8 @@
              </div>
            <div class="top-border"> </div>
 			<div class="sidebar-bottom">
-			    <h2 class="m_1">Newsletters<br> Signup</h2>
-			    <p class="m_text">Lorem ipsum dolor sit amet, consectetuer</p>
+			    <h2 class="m_1">Newsletters<br> S'inscire</h2>
+			    <p class="m_text">Marquez votre mail pour recevoir les dernieres nouveautes </p>
 			    <div class="subscribe">
 					 <form>
 					    <input name="userName" type="text" class="textbox">
