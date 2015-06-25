@@ -59,7 +59,7 @@
 					     </div>
 						<div class="col_1_of_about-box span_1_of_about-box">
 						   <a class="popup-with-zoom-anim" href="#small-dialog3">  <span class="rollover"></span><img src="images/ui.jpg" title="continue" alt=""/></a>
-		                    <h4 class="m_7"><a href="#">Samy A L'homme qu'il faut avaoir chez soi</a></h4>
+		                    <h4 class="m_7"><a href="#">Samy L'homme qu'il faut avaoir chez soi</a></h4>
 							 <p>Lorem ipsum dolor consectetur adipisicing elit, sed do eiusmod.</p>
 					     </div>
 					     <div class="col_1_of_about-box span_1_of_about-box">
