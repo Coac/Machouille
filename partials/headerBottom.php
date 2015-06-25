@@ -125,21 +125,14 @@
 			</form>
 	 </div>
   <div class="tag-list">
-    <ul class="icon1 sub-icon1 profile_img">
-		<li><a class="active-icon c1" href="#"> </a>
-			<ul class="sub-icon1 list">
-				<li><h3>sed diam nonummy</h3><a href=""></a></li>
-				<li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
-			</ul>
-		</li>
-	</ul>
+    
 	<ul class="icon1 sub-icon1 profile_img">
 		<li><a class="active-icon c2" href="#"> </a>
 			<ul class="sub-icon1 list">
 				<li><h3>Votre panier </h3><?php
 
 				if(isset($_SESSION["order"])){
-					echo " <li><p> vous avez   " .count($_SESSION["order"]). "  produits </p></li>"; 
+					echo " <li><p> vous avez   " .count($_SESSION["order"]). "  produit(s) </p></li>"; 
 					foreach ($_SESSION["order"] as $key => $value) {
 					?>
 					<li><p> <?php echo $value["qtt"] . "  ". $value["name"] ;?> </p></li>
