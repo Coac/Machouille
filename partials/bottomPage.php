@@ -43,14 +43,14 @@
               <div class="recent-tweet">
                 <div class="recent-tweet-icon"> <span> </span> </div>
                 <div class="recent-tweet-info">
-                  <p>Ds which don't look even slightly believable. If you are <a href="#">going to use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
+                  <p>Rejoignez-nous sur notre page <a href="#">Twitter</a>  </p>
                 </div>
                 <div class="clear"> </div>
               </div>
               <div class="recent-tweet">
                 <div class="recent-tweet-icon"> <span> </span> </div>
                 <div class="recent-tweet-info">
-                  <p>Ds which don't look even slightly believable. If you are <a href="#">going to use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
+                  <p> Notre page <a href="#">Twitter </a> vous permettra de connaitre les dernieres nouveautes !</p>
                 </div>
                 <div class="clear"> </div>
               </div>
