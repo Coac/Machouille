@@ -35,7 +35,7 @@
 						  fjs.parentNode.insertBefore(js, fjs);
 						}(document, 'script', 'facebook-jssdk'));</script>
               <div class="like_box">
-                <div class="fb-like-box" data-href="http://www.facebook.com/w3layouts" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                <div class="fb-like-box" data-href="https://www.facebook.com/pages/Machouille/1466680960220993?fref=ts" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
               </div>
             </div>
             <div class="col_1_of_f_2 span_1_of_f_2">
