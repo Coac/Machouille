@@ -117,10 +117,12 @@
 		</div>
 	</div>
    <div class="header-bottom-right">
-     <div class="search">	  
-			<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-			<input type="submit" value="Subscribe" id="submit" name="submit">
-			<div id="response"> </div>
+          <div class="search">
+     		<form methode="get"	action="classes/displayProducts.php">  
+				<input type="text" name="name" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+				<input type="submit" value="Subscribe" id="submit" name="submit">
+				<div id="response"> </div>
+			</form>
 	 </div>
   <div class="tag-list">
     <ul class="icon1 sub-icon1 profile_img">

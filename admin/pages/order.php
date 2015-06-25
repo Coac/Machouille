@@ -265,9 +265,17 @@
               <input type="text" value="prix" id="prix" name="prix" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'prix  ';}">
             </div>
             
-                        <div>
+                    <!--    <div>
               <input type="text" value="Categorie" id="categorie" name="categorie" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Categorie  ';}">
             </div>
+            --> 
+            <div><select id="categorie" name="categorie" onchange="change_country(this.value)" class="frm-field required">
+		            <option value="null">Select a categorie</option>         
+		            <option value="1">Tri-gouts</option>
+		            <option value="2">Crémeux</option>
+		            <option value="3">Fruités</option>
+		         </select></div>	
+                    
             
           <button class="grey">Submit</button>
           <p class="terms">By clicking 'Submit' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
@@ -276,6 +284,8 @@
       </div>
  
    </div>
+ 
+ 
  
  
  

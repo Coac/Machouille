@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.0.4.2
 -- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1
--- Généré le :  Mer 24 Juin 2015 à 12:10
--- Version du serveur :  5.6.17
--- Version de PHP :  5.5.12
+-- Client: localhost
+-- Généré le: Jeu 25 Juin 2015 à 09:47
+-- Version du serveur: 5.6.13
+-- Version de PHP: 5.4.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,8 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données :  `machouille`
+-- Base de données: `machouille`
 --
+CREATE DATABASE IF NOT EXISTS `machouille` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `machouille`;
 
 -- --------------------------------------------------------
 
@@ -51,15 +53,21 @@ CREATE TABLE IF NOT EXISTS `product` (
   `img` varchar(40) DEFAULT NULL,
   `desc` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Contenu de la table `product`
 --
 
 INSERT INTO `product` (`id`, `price`, `name`, `category`, `img`, `desc`) VALUES
-(1, 0, 'Fraise-Framboise-Poulet', 1, '', ''),
-(2, 50, 'Fraise-Chocolat-Banane', 1, '', '');
+(1, 2, 'Fraise-Framboise-Poulet', 1, '', ''),
+(2, 50, 'Fraise-Chocolat-Banane', 1, '', ''),
+(5, 15, 'Grenadine - Menthe - Poire', 3, NULL, ''),
+(6, 2, 'Grenadine - Pruneaux - Mandarine', 3, NULL, ''),
+(8, 5, 'Fraise façon crumble', 2, NULL, ''),
+(9, 7, 'Pomme', 3, NULL, ''),
+(10, 10, 'Pruneaux d''Agen', 3, NULL, ''),
+(11, 7, 'Menthe Forte', 3, NULL, '');
 
 -- --------------------------------------------------------
 
@@ -71,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `productcategory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(15) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `productcategory`
@@ -79,7 +87,8 @@ CREATE TABLE IF NOT EXISTS `productcategory` (
 
 INSERT INTO `productcategory` (`id`, `name`) VALUES
 (1, 'tri-gout'),
-(2, '');
+(2, 'cremeux'),
+(3, 'fruit');
 
 -- --------------------------------------------------------
 
@@ -119,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `login`, `pwd`, `firstname`, `lastname`, `datebirth`, `adress`, `category`) VALUES
-(1, 'admin', 'admin', NULL, NULL, NULL, NULL, 1);
+(1, 'admin', 'admin', NULL, NULL, '2013-07-02', NULL, 1);
 
 -- --------------------------------------------------------
 

@@ -6,6 +6,9 @@ $nbProductToDisplay = 10;
 $productObject = new Product();
 if(isset($category) && $category != "")
 	$products = $productObject->getByCategoryName($category);
+else if(isset($_GET['name']) && $_GET['name'] != "")
+	$products = $productObject->getByName($_GET['name']);
+
 else
 	$products = $productObject->getAll();
 
