@@ -1,6 +1,6 @@
 
 <?php
-	$title = "Hey there, bitch!" ;
+	$title = "Votre profil" ;
 	include('partials/headertop.php');
 ?>
 <script type="text/javascript" src="jquery.min.js"></script>
