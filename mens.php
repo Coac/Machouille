@@ -40,7 +40,10 @@
     	</div>
      	<div class="clear"></div>
 	</div>
-			<?php include('classes/displayProducts.php'); ?>
+	<?php
+			if( isset($_GET['category']) &&  $_GET['category'] !="")
+				$category = $_GET['category'];
+			 include('classes/displayProducts.php'); ?>
 		 	 							 			    
 		  </div>
 			<div class="rsidebar span_1_of_left">

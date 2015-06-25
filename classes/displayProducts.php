@@ -4,10 +4,15 @@ require_once("classes/Product.class.php");
 $nbProductToDisplay = 10;
 
 $productObject = new Product();
-$products = $productObject->getAll();
+if(isset($category) && $category != "")
+	$products = $productObject->getByCategoryName($category);
+else
+	$products = $productObject->getAll();
+
 ?>
 <div class="top-box">
 <?php
+if($products)
 for ($i=0; $i < $nbProductToDisplay && $i<count($products); $i++) {   
 	if($i%3 ==0) {
 ?>
