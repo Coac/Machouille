@@ -256,7 +256,13 @@
     <div class="register_account">
       <div class="wrap">
         <h4 class="title">Ajoute un chewing gum</h4>
-        <form action="offerscript.php" method="post" id="submit">
+
+<form method="POST" action="testimg.php" enctype="multipart/form-data">
+     <input type="hidden" name="MAX_FILE_SIZE" value="100000">
+     Fichier : <input type="file" name="avatar">
+
+
+
           <div class="col_1_of_2 span_1_of_2">
             <div>
               <input type="text" value="Name" id ="nom" name="nom" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
@@ -309,5 +315,20 @@
 <script src="../js/morris-data.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="../dist/js/sb-admin-2.js"></script>
+
+
+
+
+<script type="text/javascript">
+function destroyb() { 
+    $.get("destroybasket.php");
+  myVar=setTimeout(function(){location.reload()},100);
+
+    return false;
+}
+
+</script>
+
+
 </body>
 </html>
