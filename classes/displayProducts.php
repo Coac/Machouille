@@ -6,7 +6,7 @@ $nbProductToDisplay = 10;
 $productObject = new Product();
 if(isset($category) && $category != "")
 	$products = $productObject->getByCategoryName($category);
-else if(isset($search) && $search != "")
+else if(isset($search) && $search != "") 
 	$products = $productObject->getByName($search);
 else
 	$products = $productObject->getAll();

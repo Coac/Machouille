@@ -17,7 +17,7 @@
 		<?php  $category = "tri-gout";  include("partials/displayMegaPanel.php"); ?>
 		<?php  $category = "cremeux";  include("partials/displayMegaPanel.php"); ?>				
 		<?php  $category = "fruit";  include("partials/displayMegaPanel.php"); ?>	
-
+		<?php  $category = "" ?>
 			<li><a class="color7" href="about.php">About</a></li>
 		</ul>
 		</div>
