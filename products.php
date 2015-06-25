@@ -1,4 +1,4 @@
-<?php $title = "Pouet"; include('partials/header.php'); ?>
+<?php $title = "Produits"; include('partials/header.php'); ?>
 <div class="mens">    
   <div class="main">
      <div class="wrap">
