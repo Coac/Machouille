@@ -116,7 +116,7 @@
 							</div>
 						</div>
 		       </section>
-		       <section  class="sky-form">
+		       <!-- <section  class="sky-form">
 					<h4>Frame Shape</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
@@ -133,8 +133,8 @@
 								
 							</div>
 						</div>
-		       </section>
-		       <section  class="sky-form">
+		       </section> -->
+		       <!--<section  class="sky-form">
 					<h4>Frame Size</h4>
 						<div class="row row1 scroll-pane">
 							<div class="col col-4">
@@ -162,7 +162,7 @@
 							</div>
 						</div>
 		       </section>
-		       <section  class="sky-form">
+		       <!-- <section  class="sky-form">
 					<h4>Colors</h4>
 						<ul class="color-list">
 							<li><a href="#"> <span class="color1"> </span><p class="red">Red</p></a></li>
@@ -173,7 +173,7 @@
 							<li><a href="#"> <span class="color6"> </span><p class="red">Orange</p></a></li>
 							<li><a href="#"> <span class="color7"> </span><p class="red">Gray</p></a></li>
 					   </ul>
-		       </section>
+		       </section>-->
 		      </div>
 			<div class="clear"></div>
 			</div>
