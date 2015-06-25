@@ -67,7 +67,7 @@
 		    <div class="slider-wrapper theme-default">
               <div id="slider" class="nivoSlider">
                 <img src="images/cg12.jpg"  alt="" />
-               	<img src="images/cg3.jpg"  alt="" />
+               	<img src="images/cg5.jpg"  alt="" />
                 <img src="images/cg4.jpg"  alt="" />
                 <img src="images/cg6.jpg"  alt="" />
                 <img src="images/cg7.jpg"  alt="" />
