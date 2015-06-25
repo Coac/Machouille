@@ -1,57 +1,89 @@
 
 <?php
 	$title = "Hey there, bitch!" ;
-	include('partials/header.php');
+	include('partials/headertop.php');
 ?>
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script type="text/javascript">
+function doSomething() {
+
+
+$('#info').slideToggle();
+
+myVar=setTimeout(function(){$('#updateFrm').slideToggle();},800)
+
+}
+</script>
+
+
+<script type="text/javascript">
+function doSomethingt() {
+
+
+$('#updateFrm').slideToggle();
+
+myVar=setTimeout(function(){$('#info').slideToggle();},800)
+
+}
+</script>
+
+
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		$('#updateFrm').slideToggle();
+
 	});
 </script>
 <h1>
-<?php
-	echo $_SESSION['user']['login'] . " : Profile";
-?>
+
 </h1>
 </br></br>
 
-<input id="update" type="submit" value="Edit Profile">
-<div id="info">
-	<h2>General Information</h2>
-	</br>  
-	<h3>
-	First name : <?php echo $_SESSION['user']['firstname'] ; ?>
-	</br>  
-	Last name : <?php echo $_SESSION['user']['lastname'] ; ?>
-	</br>
-	Date of birth : <?php echo $_SESSION['user']['datebirth'] ; ?>
-	</br>
-	Adress : <?php echo $_SESSION['user']['adress'] ; ?>
-	</h3>
-	</br></br>
+<div class="row">
+	<div class="col-md-2"></div>
+
+<div class="col-md-4" id="info">
+					<h4 class="title"> <?php echo $_SESSION['user']['login'] ;?>  General Information</h4>
+					
+					<p> First name : <?php echo $_SESSION['user']['firstname'] ; ?></p>
+					<p> Last name : <?php echo $_SESSION['user']['lastname'] ; ?> </p>
+					<p> Date of birth : <?php echo $_SESSION['user']['datebirth'] ; ?></p>
+					<p> Adress : <?php echo $_SESSION['user']['adress'] ; ?></p>
+					<div class="clear"></div>
+					
+
+					<div class="button1">
+					   <a class="btn btn-default" onclick="doSomething();" role="button">Edit the info</a>
+					 </div>
+
+				</div>
+
+<div class="col-md-6" id="updateFrm">
+	<h4 class="title">Edit your profil </h4>
+<form >
+	<p>New Password  <input id="password" class="form-control" type="password" name="password"> </p>
+	<p>New First Name   <input id="fName" class="form-control" type="text" name="fName"></p>
+	<p>New Last Name   	<input id="lName" class="form-control" type="text" name="lName"></p>
+	<p>New Adress <input id="adress" class="form-control" type="text" name="adress">
+	</p>
+</form>
+<div class="button1">
+		<input class="btn btn-default" id="updating" type="button" value="Set">
+
+					   <a class="btn btn-default" onclick="doSomethingt();" role="button">See the info</a>
+					 </div>
+</div>
+
 </div>
 
 
-<form id="updateFrm">
-	<p>New Login</p><br>
-	<input id="login"type="text" name="login">
-	<br>
-	<p>New Password</p><br>
-	<input id="password" type="password" name="password">
-	<br>
-	<p>New First Name</p><br>
-	<input id="fName" type="text" name="fName">
-	<br>
-	<p>New Last Name</p><br>
-	<input id="lName" type="text" name="lName">
-	<br>
-	<p>New Adress</p><br>
-	<input id="adress" type="text" name="adress">
-	<br><br>
-	<input id="updating" type="button" value="Set">
-</form>
 
-<h2>Orders Timeline</h2>
+
+<div class="row">
+	<div class="col-md-2"></div>
+<div class="col-md-6">
+<h2 class="title">Orders Timeline</h2>
 <?php
 	include("classes/Product.class.php");
 	$product = new Product();
@@ -114,14 +146,12 @@
 			};
 		});
 </script>
+</div>
 
-<script type="text/javascript">
-	jQuery(document).ready(function() {
-		$("#update").click(function() {
-			$('#info').slideToggle();
-			$('#updateFrm').slideToggle();
-		});
-	});
-</script>
+</div>
+
+
+
+
 <?php include('partials/bottomPage.php'); ?>
 </html>
