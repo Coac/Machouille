@@ -207,7 +207,7 @@
 				else
 					echo '<li><p>  Votre panier est vide </p></li>';
 				
-				?><a href=""></a></li>
+				?>
 				
 			</ul>
 		</li>

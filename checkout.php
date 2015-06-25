@@ -34,17 +34,30 @@
 					          <td><a href=<?php echo 'single.php?id=' . $value['id'] ?>> voir fiche produit</a></td>
 					        </tr> 
 				<?php 		}
+           ?>
 			
-				echo   '</tbody>
+				      </tbody>
 					    </table>
 
-              <a class="btn btn-default" href="destroybasket.php" role="button">Delete all the items</a>';
+              <a class="btn btn-default" onclick="doSomething();" role="button">Delete all the items</a>
 
-    	     }
+    	     <?php     }
+           ?>
 
 
-    	     ?>
 
     	   </div>
     	</div>
+
+
+<script type="text/javascript">
+function doSomething() {
+    $.get("destroybasket.php");
+  myVar=setTimeout(function(){location.reload()},100);
+
+    return false;
+}
+</script>
+
+
   <?php include('partials/bottomPage.php'); ?>
