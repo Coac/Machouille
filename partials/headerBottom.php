@@ -14,85 +14,10 @@
 			<div class="menu">
             <ul class="megamenu skyblue">
 		<li class="active grid"><a href="index.php">Home</a></li>
-		<li><a class="color4" href="products.php?category=tri-gout">Tri-gout</a>
-			<div class="megapanel">
-				<div class="row">
-					<div class="col1">
-						<div class="h_nav">
-							<h4>Contact Lenses</h4>
-							<ul>
-								<li><a href="products.php?category=tri-gout">Daily-wear soft lenses</a></li>
-								<li><a href="products.php?category=tri-gout">Extended-wear</a></li>
-								<li><a href="products.php?category=tri-gout">Lorem ipsum </a></li>
-								<li><a href="products.php?category=tri-gout">Planned replacement</a></li>
-							</ul>	
-						</div>							
-					</div>
-					<div class="col1">
-						<div class="h_nav">
-							<h4>Sun Glasses</h4>
-							<ul>
-								<li><a href="products.php?category=tri-gout">Heart-Shaped</a></li>
-								<li><a href="products.php?category=tri-gout">Square-Shaped</a></li>
-								<li><a href="products.php?category=tri-gout">Round-Shaped</a></li>
-								<li><a href="products.php?category=tri-gout">Oval-Shaped</a></li>
-							</ul>	
-						</div>							
-					</div>
-					<div class="col1">
-						<div class="h_nav">
-							<h4>Eye Glasses</h4>
-							<ul>
-								<li><a href="products.php?category=tri-gout">Anti Reflective</a></li>
-								<li><a href="products.php?category=tri-gout">Aspheric</a></li>
-								<li><a href="products.php?category=tri-gout">Bifocal</a></li>
-								<li><a href="products.php?category=tri-gout">Hi-index</a></li>
-								<li><a href="products.php?category=tri-gout">Progressive</a></li>
-							</ul>	
-						</div>												
-					</div>
-				  </div>
-				</div>
-			</li>				
-			<li><a class="color5" href="products.php?category=cremeux">Cremeux</a>
-			<div class="megapanel">
-				<div class="col1">
-						<div class="h_nav">
-							<h4>Contact Lenses</h4>
-							<ul>
-								<li><a href="products.php?category=cremeux">Daily-wear soft lenses</a></li>
-								<li><a href="products.php?category=cremeux">Extended-wear</a></li>
-								<li><a href="products.php?category=cremeux">Lorem ipsum </a></li>
-								<li><a href="products.php?category=cremeux">Planned replacement</a></li>
-							</ul>	
-						</div>							
-					</div>
-					<div class="col1">
-						<div class="h_nav">
-							<h4>Sun Glasses</h4>
-							<ul>
-								<li><a href="products.php?category=cremeux">Heart-Shaped</a></li>
-								<li><a href="products.php?category=cremeux">Square-Shaped</a></li>
-								<li><a href="products.php?category=cremeux">Round-Shaped</a></li>
-								<li><a href="products.php?category=cremeux">Oval-Shaped</a></li>
-							</ul>	
-						</div>							
-					</div>
-					<div class="col1">
-						<div class="h_nav">
-							<h4>Eye Glasses</h4>
-							<ul>
-								<li><a href="products.php?category=cremeux">Anti Reflective</a></li>
-								<li><a href="products.php?category=cremeux">Aspheric</a></li>
-								<li><a href="products.php?category=cremeux">Bifocal</a></li>
-								<li><a href="products.php?category=cremeux">Hi-index</a></li>
-								<li><a href="products.php?category=cremeux">Progressive</a></li>
-							</ul>	
-						</div>												
-					</div>
-				</div>
-			</li>
-			<li><a class="color6" href="products.php?category=fruit">Fruit</a></li>
+		<?php  $category = "tri-gout";  include("partials/displayMegaPanel.php"); ?>
+		<?php  $category = "cremeux";  include("partials/displayMegaPanel.php"); ?>				
+		<?php  $category = "fruit";  include("partials/displayMegaPanel.php"); ?>	
+
 			<li><a class="color7" href="about.php">About</a></li>
 		</ul>
 		</div>
