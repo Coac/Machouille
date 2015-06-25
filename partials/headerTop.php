@@ -46,7 +46,6 @@
 			 </div>
 		 <div class="cssmenu">
 			<ul>
-				<li class="active"><a href="login.php">Account</a></li> |
 				<li><a href="checkout.php">Wishlist</a></li> |
 				<li><a href="checkout.php">Checkout</a></li> |
 
