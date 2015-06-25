@@ -23,6 +23,19 @@
             }
         }
 
+         public function getByName($name){
+            $data = $this->_db->prepare("SELECT product.name,product.price, product.id FROM product WHERE product.name='" . $name . "'", true); 
+            $data->execute();
+            $result = $data->fetchAll();
+            if(empty($result)) 
+                return false;
+            else
+            {
+                return $result;
+            }
+        }
+
+
         public function getAll(){
             $data = $this->_db->prepare("SELECT * FROM product", true); 
             $data->execute();
