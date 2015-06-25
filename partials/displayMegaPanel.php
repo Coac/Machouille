@@ -11,7 +11,7 @@ $products = $productObject->getByCategoryName($category);
 				<h4><?php echo $category ?></h4>
 				<ul>
 					<?php for ($i=0; $i < count($products); $i++) { ?>
-						<li><a href=<?php echo "products.php?id=" . $products[0]['id'] ?>><?php echo $products[$i]['name'] ?></a></li>
+						<li><a href=<?php echo "single.php?id=" . $products[0]['id'] ?>><?php echo $products[$i]['name'] ?></a></li>
 					<?php } ?>
 				</ul>	
 			</div>												
