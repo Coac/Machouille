@@ -49,13 +49,15 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 			     </div>
 			   <div class="clear"></div>	
 	    <div class="clients">
-	    <h3 class="m_3">10 Other Products in the same category</h3>
+	    	<?php $res=$productObject->getByCategoryid($product[0]['category']);
+		 		$cat = $productObject->getCategoryName($product[0]['category'])	;?>
+	    <h3 class="m_3"><?php echo count($res)+1; ?> Other Products in the same category</h3>
 		 <ul id="flexiselDemo3">
-			<li><img src="images/s5.jpg" /><a href="#">Category</a><p>Rs 600</p></li>
-			<li><img src="images/s6.jpg" /><a href="#">Category</a><p>Rs 850</p></li>
-			<li><img src="images/s7.jpg" /><a href="#">Category</a><p>Rs 900</p></li>
-			<li><img src="images/s8.jpg" /><a href="#">Category</a><p>Rs 550</p></li>
-			<li><img src="images/s9.jpg" /><a href="#">Category</a><p>Rs 750</p></li>
+		 	<?php
+		 	foreach ($res as $key => $value) {
+		 	?>	
+			<li><img <?php echo 'src="images/'.$value['img'].'"'; ?>/><a href="#"><?php echo $cat['0']['name']; ?></a><p><?php echo substr($value['name'],0,-5).".."; ?></p></li>
+			<?php } ?>
 		 </ul>
 	<script type="text/javascript">
 		$(window).load(function() {
