@@ -54,7 +54,7 @@
   <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-    <a class="navbar-brand" href="index.html">SB Admin v2.0</a> </div>
+          <a class="navbar-brand" href="index.php">Machouille Admin</a> </div>
   <!-- /.navbar-header -->
   <ul class="nav navbar-top-links navbar-right">
     <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i> </a>
@@ -270,7 +270,7 @@
             </div>
             
           <button class="grey">Submit</button>
-          <p class="terms">By clicking 'Create Account' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
+          <p class="terms">By clicking 'Submit' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
           <div class="clear"></div>
         </form>
       </div>
@@ -278,32 +278,6 @@
    </div>
  
  
-zzzz
-
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
-
-    $("#submit").click(function{
-		alert("go");
-        $.post(
-            'offerscript.php', // Un script PHP que l'on va créer juste après
-            {
-                nom : $("#nom").val();  // Nous récupérons la valeur de nos input que l'on fait passer à connexion.php
-                prix : $("#prix").val();
-				categorie : $("#categorie").val();
-            },
-            'text'
-         );
-
-    });
-
-});
-
-</script>
  
  
  
