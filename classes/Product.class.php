@@ -72,6 +72,20 @@
             }
         }
 
+        public function addorder($arr,$id){
+            $sql = "INSERT INTO orders (iduser)VALUES (".$id.")";
+            $data = $this->_db->prepare($sql, false); 
+            $data->execute();
+            $last_id =$this->_db->lastid();
+            var_dump($last_id);
+            foreach ($arr as $key => $value) {
+            $sql = "INSERT INTO productodered (idorder,quantity,idproduct,price)VALUES ('".$last_id."','" . $value['qtt'] . "','" . $value['id'] ."','" . $value['price']*$value['qtt'] ."')";
+            var_dump($sql);
+            $data = $this->_db->prepare($sql, false); 
+            $data->execute();
+            }
+        }
+
         public function getCategoryName($id){
             $data = $this->_db->prepare("SELECT productcategory.name FROM product, productcategory WHERE product.category=productcategory.id AND product.id='" . $id . "'", true); 
             $data->execute();
@@ -91,11 +105,13 @@
         }
 		
 		public function getUserOrders($id){
-            $data = $this->_db->prepare("SELECT p.category, p.name, p.price FROM product p, productodered po, user u, orders od WHERE u.id = " . $id . " and u.id = od.iduser and po.idorder = od.id and p.id = po.idproduct;", true); 
+            $data = $this->_db->prepare("SELECT p.category, p.name, p.price  FROM product p, productodered po, user u, orders od WHERE u.id = " . $id . " and u.id = od.iduser and po.idorder = od.id and p.id = po.idproduct;", true); 
             $data->execute();
 			$result = $data->fetchAll();
 			return $result;
         }
+
+
 
     }
 

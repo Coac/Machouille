@@ -105,7 +105,19 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 <div class="row">
 	<div class="col-md-2"></div>
 <div class="col-md-6">
-				    <tbody>
+				    
+				    	<h4 class="title">Orders Timeline</h2>
+				    	<table class="table table-hover">
+			      <thead>
+			        <tr>
+			          <th>Category id</th>
+			          <th>Name product</th>
+			          <th>Price</th>
+			          <th></th>
+			        </tr>
+			      </thead>
+			      <tbody>	
+
 <?php
 	include("classes/Product.class.php");
 	$product = new Product();
@@ -117,17 +129,8 @@ myVar=setTimeout(function(){$('#info').slideToggle();},800)
 
 
 		?>
-<h4 class="title">Orders Timeline</h2>
 
-	<table class="table table-hover">
-			      <thead>
-			        <tr>
-			          <th>Category id</th>
-			          <th>Name product</th>
-			          <th>Price</th>
-			          <th></th>
-			        </tr>
-			      </thead>
+	
 
 
 		<tr>

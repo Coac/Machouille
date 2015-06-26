@@ -54,6 +54,8 @@
 					    </table>
 
               <a class="btn btn-default" onclick="destroyb();" role="button">Delete all the items</a>
+              <a class="btn btn-default" href="buy.php" role="button">Buy</a>
+
 
     	     <?php     }
            ?>

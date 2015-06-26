@@ -36,6 +36,9 @@
 			{
 				return $this->_link->prepare($str);
 			}
+			public function lastid(){
+				return $this->_link->lastInsertId();
+			}
 
 			public function execute()
 			{
