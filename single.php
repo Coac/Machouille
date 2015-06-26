@@ -31,6 +31,7 @@ $categoryName = $productObject->getCategoryName($_GET['id']);
 							<input type="submit" value="buy" title="">
 							<input type="hidden" name="id" value=<?php echo $product[0]['id'] ?>>
 							<input type="hidden" name="name" value=<?php echo $product[0]['name']  ?>>
+							<input type="hidden" name="price" value=<?php echo $product[0]['price']  ?>>
 							<select name="quantity">
 								<option value="1">1</option>
 								<option value="2">2</option>
